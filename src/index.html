@@ -281,7 +281,7 @@
               <li class="content-detail">
                 <div class="left">技术栈 ：</div>
                 <div class="right" style="margin-left: 10px;">
-                  Vue2+scrm-component+Vue3+Element-plus+TypeScript+Egg+Mysql
+                  Vue2+scrm-component+Vue3+Element-plus+TypeScript+Egg+Mysql+Ace
                 </div>
               </li>
               <li class="content-detail">
@@ -297,7 +297,12 @@
               <li class="content-detail technology">
                 <div class="left">技术描述：</div>
                 <div class="right">
-                  <div>1.</div>
+                  <div>1.负责对接设计、产品部门输出Sass平台的组件，以及完善组件文档、测试、组件更新日志，让前端开发同事更加快速上手</div>
+                  <div>2.考虑到由于公司项目众多，主要涉及小程序，pc端，每个项目又有多个环境的配置，发布到各个环境，有需要手动重新打包发布，才能获取到相应环境的配置。所以提出了将各个项目中的环境配置，提取到由一个公共服务模块统一进行管理-前端配置服务</div>
+                  <div>3.前端配置服务分为前端、后端两个模块。前端模块采用Vue3+TS+Acejs代码编辑器开发，用TS静态类型检测约束代码的准确性，使可读性更强，Acejs代码编辑器作为代码的编辑、代码智能提示、格式化保存等，使用new Funtion对代码js的语法进行校验</div>
+                  <div>4.设计配置服务后端数据结构-用户、项目、项目环境、环境配置，并实现相关接口，联调测试</div>
+                  <div>5.为方便开发人员使用，进一步优化使用体验，设计实现获取配置统一环境接口，根据参数不同，区分环境和项目。开发人员可创建环境项目，但只有管理员权限才能修改生产环境相关配置，进一步确保线上项目的安全</div>
+                  <div>6.使用jmeter测试工具对统一接口进行压测，线程数1000，ramp-up 20s,循坏次数3次，对于结果查看报告请求响应时间均在400ms以内，成功率到达97%，整体来说这个结果还是比较良好的，进一步确保服务的稳定性</div>
                 </div>
               </li>
             </ul>
